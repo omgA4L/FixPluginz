@@ -334,6 +334,8 @@ class PureChat extends PluginBase
 
     private function loadFactionsPlugin()
     {
+        $this->factionsAPI = new FactionsProNew();
+        
         $factionsPluginName = $this->config->get("default-factions-plugin");
 
         if($factionsPluginName === null)
