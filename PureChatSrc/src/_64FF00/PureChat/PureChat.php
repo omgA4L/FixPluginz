@@ -368,6 +368,7 @@ class PureChat extends PluginBase
                         }
                     }
 
+                    $this->factionsAPI = new FactionsProOld();
                     $this->getLogger()->notice("No valid factions plugin in default-factions-plugin node was found. Disabling factions plugin support.");
 
                     break;
